@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--cl-main);
+}
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+input,
+textarea,
+select {
+  outline: none;
+}
+.c-img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.c-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
+}
